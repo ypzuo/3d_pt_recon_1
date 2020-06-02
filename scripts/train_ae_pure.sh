@@ -1,0 +1,11 @@
+python train_ae_pure.py \
+	--data_dir_pcl data/shapenet/ShapeNet_pointclouds \
+	--exp expts/now/pure_ae_1024_car \
+	--gpu 0 \
+	--category car \
+	--bottleneck 512 \
+	--batch_size 128 \
+	--lr 5e-4 \
+    --max_epoch 100 \
+	--bn_decoder \
+	--print_n 100 \

@@ -1,0 +1,13 @@
+python train_ae_local.py \
+	--data_dir_pcl data/shapenet/ShapeNet_pointclouds \
+	--exp expts/local_ae_all_cat \
+	--gpu 0 \
+	--category chair \
+	--in_pcl_size 1024  \
+	--bottleneck 512 \
+	--batch_size 256 \
+	--lr 5e-4 \
+	--max_epoch 5 \
+	--bn_decoder \
+	--print_n 100 \
+	--localsift \

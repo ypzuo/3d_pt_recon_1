@@ -1,0 +1,12 @@
+python metrics_finetune_img_ae.py \
+	--gpu 0 \
+	--data_dir_imgs data/shapenet/ShapeNetRendering \
+	--data_dir_pcl data/shapenet/ShapeNet_pointclouds \
+	--exp expts/finetune_img_ae \
+	--category chair \
+	--load_best \
+	--bottleneck 512 \
+	--bn_decoder \
+	--eval_set valid \
+	--batch_size 24 \
+	--visualize \

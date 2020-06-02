@@ -1,0 +1,15 @@
+python train_finetune_img_ae.py \
+	--data_dir_imgs data/shapenet/ShapeNetRendering \
+	--data_dir_pcl data/shapenet/ShapeNet_pointclouds \
+	--exp expts/finetune_img_ae_airplane \
+    --exp_psgn expts/img2pcl_airplane \
+    --exp_ae expts/now/pure_ae_1024_airplane \
+	--gpu 0 \
+	--category airplane \
+    --bottleneck 512 \
+	--loss chamfer \
+	--batch_size 128 \
+	--lr 5e-5 \
+	--bn_decoder \
+	--max_epoch 50 \
+	--print_n 100 \

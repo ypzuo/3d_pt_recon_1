@@ -1,0 +1,15 @@
+python train_finetune_pure.py \
+	--data_dir_imgs data/shapenet/ShapeNetRendering \
+	--data_dir_pcl data/shapenet/ShapeNet_pointclouds \
+	--exp expts/finetune_pure \
+    --exp_psgn expts/img2pcl_all_cat \
+    --exp_ae expts/pure_ae_all_cat \
+	--gpu 0 \
+	--category chair \
+    --in_pcl_size 2048 \
+    --bottleneck 512 \
+	--batch_size 32 \
+	--lr 5e-5 \
+	--bn_decoder \
+	--max_epoch 2 \
+	--print_n 100 \

@@ -1,0 +1,11 @@
+python metrics_finetune_pure.py \
+	--gpu 0 \
+	--data_dir_imgs data/shapenet/ShapeNetRendering \
+	--data_dir_pcl data/shapenet/ShapeNet_pointclouds \
+	--exp expts/finetune_pure \
+	--category chair \
+	--load_best \
+	--bottleneck 512 \
+	--bn_decoder \
+	--eval_set valid \
+	--batch_size 24 \
